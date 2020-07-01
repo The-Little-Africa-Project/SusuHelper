@@ -34,6 +34,9 @@ public class Susu {
     @OneToMany(mappedBy = "susu", targetEntity = SusuHand.class)
     private Set<SusuHand> susuHands;
 
+    @ManyToOne
+    private SusuGroup group;
+
 
 
 }

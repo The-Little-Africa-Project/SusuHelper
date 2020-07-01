@@ -23,7 +23,7 @@ public class SusuGroup {
     private Set<User> groupMembers;
 
 
-    @OneToMany
+    @OneToMany(mappedBy = "group", targetEntity = Susu.class)
     private Set<Susu> susus;
 
 }
