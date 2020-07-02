@@ -29,6 +29,7 @@ public class Susu {
 
     private boolean requireReserves;
 
+    @Enumerated(value = EnumType.STRING)
     private Frequency handFrequency;
 
     @OneToMany(mappedBy = "susu", targetEntity = SusuHand.class)
